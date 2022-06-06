@@ -3,13 +3,322 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="height=device-height, initial-scale=1" />
     <title>Résumé</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    ― Hello World! &#x1F609;
+
+    <main>
+        <div id="top" class="resume">
+            <div class="container">
+                <div class="resume__block">
+                    <h1 class="contact-info__header">Yevhen Danilov</h1>
+                    <h3 class="contact-info__sub-header">Full Stack Developer</h3>
+
+                    <div class="contact_info_container fh">
+                        <div class="contact-info__block">
+                            <a href="https://goo.gl/maps/hsgbQJsqZVW9j8cRA" rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 384 512">
+                                        <path
+                                            d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>Kyiv, Ukraine</span>
+                            </a>
+                            <a href="tel:+380664652112" rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 384 512">
+                                        <path
+                                            d="M320 0H64C37.5 0 16 21.5 16 48v416C16 490.5 37.5 512 64 512h256c26.5 0 48-21.5 48-48v-416C368 21.5 346.5 0 320 0zM240 447.1C240 456.8 232.8 464 224 464H159.1C151.2 464 144 456.8 144 448S151.2 432 160 432h64C232.8 432 240 439.2 240 447.1zM304 384h-224V64h224V384z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>+38 066 465 21 12</span>
+                            </a>
+                            <a href="https://t.me/YevhenDanilov" rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 496 512">
+                                        <path
+                                            d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>@YevhenDanilov</span>
+                            </a>
+
+                        </div>
+
+                        <div class="contact-info__block contact-info__block--center">
+                            <img class="contact-info__avatar" src="assets/YevhenDanilov.jpg" alt="Avatar">
+                        </div>
+
+                        <div class="contact-info__block">
+                            <a href="mailto:danilov.evgen@gmail.com" rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512">
+                                        <path
+                                            d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>danilov.evgen@gmail.com</span>
+                            </a>
+                            <a href="https://github.com/IevgenDanilov/" rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 496 512">
+                                        <path
+                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>https://github.com/IevgenDanilov</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yevhen-danilov/" rel="author"
+                                class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512">
+                                        <path
+                                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span>https://www.linkedin.com/in/yevhen-danilov</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="resume__block">
+                    <div class="intro">
+                        <div class="intro__icon-wrapper">
+                            <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <path
+                                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="intro_text">I have different experiences in professional activities and personal
+                            development. I am
+                            looking for a job in a friendly team focused on constructive work and quality results. I
+                            appreciate
+                            mutual support and know how to maintain a positive atmosphere at work.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="resume__block">
+                    <div class="skills">
+                        <div class="main-info fh">
+
+                            <div class="experiences">
+                                <h3 class="experiences__header">Tech skills</h3>
+                                <ul class="experiences__company-project-responsibilities" style="list-style: none;">
+                                    <li>⚡️ HTML5/CSS3/BEM/SASS</li>
+                                    <li>⚡️ Figma, Photoshop, CorelDraw</li>
+                                    <li>⚡️ JavaScript, ES5, ES6</li>
+                                    <li>⚡️ TypeScript</li>
+                                    <li>⚡️ React.js, React Hooks</li>
+                                    <li>⚡️ Redux, Redux Toolkit</li>
+                                    <li>⚡️ REST API</li>
+                                    <li>⚡️ Node.js</li>
+                                    <li>⚡️ Express.js</li>
+                                    <li>⚡️ MongoDB, Mongoose</li>
+                                    <li>⚡️ Postman, Insomnia</li>
+                                    <li>⚡️ Parcel, Webpack</li>
+                                    <li>⚡️ GIT, GitHub</li>
+                                    <li>⚡️ Agile, Scrum</li>
+                                    <li>⚡️ uuApp (JS framework)</li>
+                                </ul>
+                            </div>
+
+                            <div class="additional-info fv">
+                                <div class="additional-info__education">
+                                    <h3 class="additional-info__education-header">Soft skills</h3>
+                                    <ul class="experiences__company-project-responsibilities" style="list-style: none;">
+                                        <li>⚡️ Communicative</li>
+                                        <li>⚡️ Conscientious</li>
+                                        <li>⚡️ Initiative</li>
+                                    </ul>
+                                </div>
+
+                                <div class="additional-info__languages">
+                                    <h3 class="additional-info__languages-header">Languages</h3>
+                                    <ul class="experiences__company-project-responsibilities" style="list-style: none;">
+                                        <li class="additional-info__languages-item">
+                                            ⚡️ English – intermediate
+                                        </li>
+                                        <li class="additional-info__languages-item">
+                                            ⚡️ Spanish – basic
+                                        </li>
+                                        <li class="additional-info__languages-item">
+                                            ⚡️ Ukrainian – native
+                                        </li>
+                                        <li class="additional-info__languages-item">
+                                            💩 Russian – <span> n<span
+                                                    style="text-decoration-line: line-through ; color: lightgray;">ativ</span>ever
+                                                again</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="resume__block">
+                    <div class="main-info fh">
+
+                        <div class="experiences">
+                            <h3 class="experiences__header">Experience</h3>
+                            <div class="experiences__company">
+                                <div class="experiences__company-header">
+                                    <span class="experiences__company-header-durability">Feb 2022 - Apr 2022</span>
+                                    <h3 class="experiences__company-header-name">Unicorn Systems UA</h3>
+                                </div>
+
+                                <div class="experiences__company-project">
+                                    <span class="experiences__company-project-role">Intern full stack developer</span>
+                                    <h3 class="experiences__company-project-name">Hatchery</h3>
+                                    <p>
+                                        📄 <a href="https://unicorn.com/hatchery/en/#programs-en"
+                                            style="color: lightcoral ">Internship
+                                            program</a>
+                                    </p>
+                                    <br />
+                                    <div class="additional-info__education-university-name">
+
+                                        <p>✅ full-time group training</p>
+                                        <p> ✅ working with JS, Node.js, MongoDB, REST API, uuApp</p>
+                                        <p>
+                                            ✅ <a href="https://github.com/IevgenDanilov/uuApp_todoInstance"
+                                                style="color: lightcoral ">Todo Instance
+                                                workshop</a>
+                                        </p>
+                                        <p>
+                                            ✅ <a href="https://github.com/IevgenDanilov/uuApp_uuTravelAgency"
+                                                style="color: lightcoral ">Travel Agency
+                                                workshop</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experiences__company">
+                                <div class="experiences__company-header">
+                                    <span class="experiences__company-header-durability">Jan 2008 – present</span>
+                                    <h3 class="experiences__company-header-name">Individual entrepreneur</h3>
+                                </div>
+
+                                <div class="experiences__company-project">
+                                    <span class="experiences__company-project-role">CEO</span>
+                                    <h3 class="experiences__company-project-name">Internet-shop</h3>
+                                    <p>
+                                        🔗 <a href="https://danilov.uaprom.net" target="blank"
+                                            style="color: lightcoral ">danilov.uaprom.net</a>
+                                    </p>
+                                    <p>
+                                        🖼️ <a href="https://photos.app.goo.gl/3VgGVrEqrgmM5nXLA" target="blank"
+                                            style="color: lightcoral ">projects photo gallery</a>
+                                    </p>
+                                    <br />
+                                    <div class="additional-info__education-university-name">
+                                        <p> ✅ development of economic strategy
+                                        </p>
+                                        <p> ✅ organization the production and trading company
+                                        </p>
+                                        <p>✅ work with customers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="additional-info fv">
+                            <div class="additional-info__education">
+                                <h3 class="additional-info__education-header">Education</h3>
+                                <div class="additional-info__education-university">
+                                    <span class="additional-info__education-university-durability">2006</span>
+                                    <h3 class="additional-info__education-university-speciality" style="color: coral;">
+                                        Mechanical Engineer
+                                    </h3>
+                                    <p class="additional-info__education-university-name">National Technical University
+                                        of Ukraine
+                                        “Igor Sikorsky Kyiv Polytechnic Institute”</p>
+                                </div>
+                                <br />
+                                <div class="additional-info__education-university">
+                                    <span class="additional-info__education-university-durability">2006</span>
+                                    <h3 class="additional-info__education-university-speciality" style="color: coral;">
+                                        Economist</h3>
+                                    <p class="additional-info__education-university-name">National Technical University
+                                        of Ukraine
+                                        “Igor Sikorsky Kyiv Polytechnic Institute”</p>
+                                </div>
+                            </div>
+                            <div class="additional-info__education">
+                                <h3 class="additional-info__education-header">Additional education</h3>
+                                <div class="additional-info__education-university">
+                                    <span class="additional-info__education-university-durability">2021</span>
+                                    <h3 class="additional-info__education-university-speciality" style="color: coral;">
+                                        Full Stack Developer
+                                    </h3>
+                                    <p class="additional-info__education-university-name">IT School GoIT (Kyiv)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="resume__block">
+                    <h3 class="contact-info__sub-header">Diplomas gallery</h3>
+                    <div class="diplomas-slider">
+
+                        <div class="diplomas__slide">
+                            <img src="/assets/diplomas/goit-english-html.jpg" alt="diploma" height="400px"
+                                class="diplomas__image">
+                        </div>
+                        <div class="diplomas__slide">
+                            <img src="/assets/diplomas/goit-full-stack-developer.jpg" alt="diploma" height="400px"
+                                class="diplomas__image">
+                        </div>
+                        <div class="diplomas__slide">
+                            <img src="/assets/diplomas/mongoDB-essentials.jpg" alt="diploma" height="400px"
+                                class="diplomas__image">
+                        </div>
+                    </div>
+                </div>
+                <a href="#top" style="text-decoration: none;">🔝 ascentio!</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>
