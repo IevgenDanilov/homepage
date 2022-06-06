@@ -268,3 +268,9 @@ body {
 .additional-info__languages-item {
   color: var(--secondary-text-color);
 }
+
+.diplomas__image {
+  border-radius: 3px;
+  margin: 20px auto;
+  cursor: grab;
+}

@@ -3,15 +3,21 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="height=device-height, initial-scale=1" />
     <title>Résumé</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
     <main>
-        <div class="resume">
+        <div id="top" class="resume">
             <div class="container">
                 <div class="resume__block">
                     <h1 class="contact-info__header">Yevhen Danilov</h1>
@@ -284,18 +290,35 @@
             </div>
             <div class="container">
                 <div class="resume__block">
-                    <h3 class="contact-info__sub-header">Pet projects</h3>
-                    <p> ...coming soon... </p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="resume__block">
                     <h3 class="contact-info__sub-header">Diplomas gallery</h3>
-                    <p> ...coming soon... </p>
+                    <div class="diplomas-slider">
+
+                        <div class="diplomas__slide">
+                            <img src="/assets/diplomas/goit-english-html.jpg" alt="diploma" height="400px"
+                                class="diplomas__image">
+                        </div>
+                        <div class="diplomas__slide">
+                            <img src="/assets/diplomas/goit-full-stack-developer.jpg" alt="diploma" height="400px"
+                                class="diplomas__image">
+                        </div>
+                        <div class="diplomas__slide">
+                            <img src="/assets/diplomas/mongoDB-essentials.jpg" alt="diploma" height="400px"
+                                class="diplomas__image">
+                        </div>
+                    </div>
                 </div>
+                <a href="#top" style="text-decoration: none;">🔝 ascentio!</a>
             </div>
         </div>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>
