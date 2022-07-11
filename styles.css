@@ -269,8 +269,18 @@ body {
   color: var(--secondary-text-color);
 }
 
-.diplomas__image {
+.certificates__image,
+.projects__image {
   border-radius: 3px;
   margin: 20px auto;
   cursor: grab;
+}
+
+.projects__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-text-color);
+  margin: 10px;
+  text-decoration: none;
 }
